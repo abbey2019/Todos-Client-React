@@ -8,7 +8,7 @@ const reducer =(prevState , action) =>{
         return{ todos : prevState.todos.map(e=>{if(e.id=== action.payload){e.complete = !e.complete}; return e})}
 
         default:
-            return prevState
+            return   prevState
     }
 }
 
@@ -27,7 +27,7 @@ export class Provider extends Component {
                 complete : false
             },
             {
-                id:3,
+                id: 3,
                 title:"check mails",
                 complete : false
             }
